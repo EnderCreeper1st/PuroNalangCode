@@ -14,7 +14,10 @@
         <p><strong><em>Links</em></strong></p>
         <a href="Separate_page.html" title="A Separate Page">Page with Links</a> <br>
         <a href="#End" title="To the End of Page">End</a><br>
-        <div id="button"></div>
+        <div id="button">
+            <button id="invertButton" onclick="changeInvert()">Toggle Invert</button>
+            <button id="invertImage" onclick="imageInvert(document.getElementById('sample'))">Image Invert</button>
+        </div>
         <p><em><strong>Tables</strong></em></p>
         <table style="width: 90%;" border="2">
             <colgroup>
@@ -91,7 +94,7 @@
                 <th>SS 21 - TBA 103 - K.Wanawan</th>
             </tr>
         </table>
-        <img src="sample.png"
+        <img id="sample" style="filter: invert(100%);" src="sample.png" alt="it is sample.png" title="From the sample.png file">
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <a href="#Start" title="Start">Back to Start</a>
         <p id="End"><b>THE END OF PAGE</b></p>

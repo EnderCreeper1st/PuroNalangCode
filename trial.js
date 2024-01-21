@@ -1,19 +1,22 @@
-// JavaScript code to create and append a button to the container IT IS BY ChatGPT BTW
-document.addEventListener('DOMContentLoaded', function () {
-    // Create a button element
-    var button = document.createElement('button');
+function changeInvert() {
+    var body = document.body;
+    var currentInvert = parseInt(getComputedStyle(body).filter.replace("invert(", "").replace("%)", ""));
+    var newInvert = 0;
+    if (currentInvert === 0) {
+        newInvert = 100;
+    } else {
+        newInvert = 0;
+    }
+    body.style.filter = "invert(" + newInvert + "%)";
+}
 
-    // Set button text
-    button.textContent = 'Testing';
-
-    // Add an event listener to handle button click
-    button.addEventListener('click', function () {
-        alert("OH HII!!");
-    });
-
-    // Get the container element by its ID
-    var buttonContainer = document.getElementById('button');
-
-    // Append the button to the container
-    buttonContainer.appendChild(button);
-});
+function imageInvert(element) {
+    var currentInvert = parseInt(getComputedStyle(element).filter.replace("invert(", "").replace("%)", ""));
+    var newInvert = 0;
+    if (currentInvert === 0) {
+        newInvert = 100;
+    } else {
+        newInvert = 0;
+    }
+    element.style.filter = "invert(" + newInvert + "%)";
+}
