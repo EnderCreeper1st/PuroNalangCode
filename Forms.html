@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML FORMS</title>
+    </head>
+    <body style="background-color: rgb(145, 140, 81);">
+        <h1><center>HTML Forms</center></h1>
+        <form action="trial.php" target="_blank" method="get" autocomplete="on">
+            <center>
+                <label for="First_Name">Input name</label>
+                <input id="First_Name" type="text" name="First_Name">
+                <br>
+                <label for="Last_Name">Last Name, Yes?</label>
+                <input id="Last_Name" type="checkbox" name="Last_Name">
+                <br>
+                <b>Sex</b>
+                <br>
+                <label for="Male">Male</label>
+                <input id="Male" type="radio" name="Sex" value="Male">
+                <br>
+                <label for="Female">Female</label>
+                <input id="Female" type="radio" name="Sex" value="Female">
+                <br>
+                <label for="Other">Alien ka na ata pre</label>
+                <input id="Other" type="radio" name="Sex" value="Other">
+                <br>
+                <label for="Age">Age</label>
+                <input id="Age" type="range" name="Age" value="100" min="1" max="200" oninput="this.nextElementSibling.value = this.value">
+                <output>100</output>
+                <br>
+                <label for="Color">Color</label>
+                <input id="Color" type="color" name="Color">
+                <br>
+                <label for="Date">Date</label>
+                <input id="Date" type="Date" name="Date">
+                <br>
+                <label for="Time">Time</label>
+                <input id="Time" type="time" name="Time">
+                <br>
+                <label for="Week">Week</label>
+                <input id="Week" type="week" name="Week">
+                <br>
+                <label for="Month">Month</label>
+                <input id="Month" type="month" name="Month">
+                <br>
+                <label for="Number">Number</label>
+                <input id="Number" type="number" name="Number">
+                <br>
+                <input id="Reset" type="reset" name="Reset">
+                <br>
+                <input id="Submit" type="submit" name="Submit" value="submit">
+            </center>
+        </form>
+        <a href="Prac_Sched_Jan16.html" title="Returns to Origin Page"><Center><b>Back</b></Center></a>
+    </body>
+</html>
